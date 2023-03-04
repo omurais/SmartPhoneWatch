@@ -1,0 +1,66 @@
+body{
+  background:#000;
+  color: #fff;
+  font-family: 'Noto Sans', sans-serif;
+}
+section{
+  width: 100vw;
+  height: 100vh;
+  display: flex; /* 要素をflexboxに対応させる */
+  align-items: center; /* 縦方向の中央揃え */
+  justify-content: center; /* 横方向の中央揃え */
+  flex-direction: column;
+  text-align: center;
+}
+
+#day{
+  width: 90%;
+}
+#time{
+  width: 90%;
+}
+#sec{
+  font-size: 0.5em;
+}
+.fi{
+  animation: fadein-keyframes 3s ease 0s 1 forwards;
+}
+.cantSee{
+  display: none;
+}
+
+@keyframes fadein-keyframes{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:961px){
+  body{
+    background-image: url(../img/cantSee.jpg);
+  }
+  section{
+    display: none;
+  }
+}
+
+@media screen and (max-width:960px){
+  #time{
+    font-size: 8em;
+  }
+  #day{
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width:520px){
+  #time{
+    font-size: 6em;
+  }
+  #day{
+    font-size: 1.5em;
+  }
+}
