@@ -11,6 +11,7 @@ section{
   justify-content: center; /* 横方向の中央揃え */
   flex-direction: column;
   text-align: center;
+  font-style: italic;
 }
 
 #day{
